@@ -1,0 +1,105 @@
+@import "../variables";
+
+.dispModalTask {
+  & {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #666;
+    box-shadow: 0 0 20px #666;
+    border-radius: 3px;
+    border-top-right-radius: 15px;
+  }
+  .topWindow {
+    & {
+      display: block;
+      width: 100%;
+      background-image: $topWindow;
+      height: 35px;
+      border-bottom: 1px solid #ddd;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 15px;
+      position: relative;
+    }
+    h3 {
+      //padding-top: 10px;
+      //padding-left: 10px;
+      color: #666;
+      display: block;
+      //position: absolute;
+      //top: -5px;
+      //left: -5px;
+      //width: 29px;
+      height: 40px;
+      //background-color: #fff;
+      padding: 4px 8px;
+      text-align: left;
+      //border: 1px solid $pastBorderColor;
+      border-radius: 3px;
+      border-top-left-radius: 5px;
+      box-shadow: 0 0 20px #eee;
+      text-shadow: 0 0 20px #eee;
+    }
+  }
+  .controls {
+    & {
+      height: 35px;
+      border-bottom: 1px solid #ddd;
+      background-image: linear-gradient(to bottom, #fff, #eef0ee);
+    }
+    .button {
+      display: inline-block;
+      margin: 4px 4px 0;
+      border: 1px solid $mainBorderColor;
+      padding: 2px 6px;
+      width: auto;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 10px;
+      background-image: linear-gradient(to bottom, #fff, #eef0ee, #fff);
+      box-shadow: 0 0 5px #eee;
+      color: #9a9;
+      white-space: nowrap;
+    }
+  }
+  .taskWrapper {
+    & {
+      overflow-y: auto;
+      height: calc(100% - 70px);
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: #fff;
+      padding: 10px;
+    }
+    .taskDiv {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    label, input, textarea {
+      display: block;
+      width: 100%;
+    }
+    label {
+      margin-bottom: 6px;
+      padding-left: 4px;
+    }
+    input, textarea {
+      border: 1px solid $pastBorderColor;
+      color: $pastFontColor;
+      padding: 4px;
+      font-size: 12px;
+    }
+    input {
+      height: 30px;
+      &.name {
+        font-size: 14px;
+      }
+    }
+    textarea {
+      height: 80px;
+    }
+
+  }
+}

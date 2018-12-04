@@ -1,0 +1,45 @@
+@import "../variables";
+
+.pickTime {
+  & {
+    width: 44%;
+    margin: 1%;
+    border: 1px solid #888;
+    background-color: #fff;
+  }
+  .pickButton {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    vertical-align: top;
+    box-shadow: 0 0 20px #eee;
+    font-size: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 1;
+    text-align: center;
+    border: 1px solid $pastBorderColor;
+    margin:2px;
+    &.picked {
+      border: 1px solid $presentFontColor;
+    }
+  }
+  .periodsTitle{
+    display: block;
+    font-size:11px;
+    margin-top:4px;
+  }
+  .hours {
+    display: block;
+    vertical-align: top;
+  }
+  .ampm {
+    margin-right: 10px;
+    vertical-align: top;
+  }
+  .minutes {
+    display: block;
+    vertical-align: top;
+  }
+}

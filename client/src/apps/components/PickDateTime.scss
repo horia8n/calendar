@@ -1,0 +1,19 @@
+.divDateTimeRelative {
+  position: relative;
+  .pickDateTime {
+    width: 100%;
+    position: absolute;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid #888;
+    .pickDate{
+      vertical-align: top;
+      display:inline-block;
+    }
+    .pickTime{
+      vertical-align: top;
+      display:inline-block;
+
+    }
+  }
+}

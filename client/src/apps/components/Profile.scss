@@ -1,0 +1,49 @@
+
+.profile-modal {
+  & {
+    background-color: rgba(132, 132, 132, 0.8);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modalWindow {
+    & {
+      width: 80%;
+      height: 80%;
+      margin: 2rem;
+      max-width: 32rem;
+      border: 1px solid #666;
+      box-shadow: 0 0 20px #666;
+      border-radius: 3px;
+      border-top-right-radius: 15px;
+      position: relative;
+    }
+    .closeModal {
+      & {
+        position: absolute;
+        cursor: pointer;
+        top: 0px;
+        right: 4px;
+        //float: right;
+        border: 1px solid #999;
+        border-radius: 9px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+        padding: 0 3px 1px;
+        color: #999;
+        margin-top: 6px;
+        margin-right: 6px;
+      }
+      &:hover {
+        border: 1px solid #666;
+        color: #888;
+      }
+    }
+  }
+}

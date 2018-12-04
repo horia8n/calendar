@@ -1,0 +1,16 @@
+.divDateTimeRelative {
+  position: relative; }
+  .divDateTimeRelative .pickDateTime {
+    width: 100%;
+    position: absolute;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid #888; }
+    .divDateTimeRelative .pickDateTime .pickDate {
+      vertical-align: top;
+      display: inline-block; }
+    .divDateTimeRelative .pickDateTime .pickTime {
+      vertical-align: top;
+      display: inline-block; }
+
+/*# sourceMappingURL=PickDateTime.css.map */

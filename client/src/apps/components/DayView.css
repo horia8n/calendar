@@ -1,0 +1,170 @@
+.dispModalDay {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #d6d6d9;
+  box-shadow: 0 0 20px #666;
+  border-radius: 3px; }
+.dispModalDay .topWindow {
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #fff, #ddd, #ddd, #eee, #eee);
+  height: 35px;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  position: relative; }
+.dispModalDay .topWindow h3 {
+  color: #666;
+  display: block;
+  height: 40px;
+  padding: 4px 8px;
+  text-align: left;
+  border-radius: 3px;
+  border-top-left-radius: 5px;
+  box-shadow: 0 0 20px #eee;
+  text-shadow: 0 0 20px #eee; }
+.dispModalDay .controls {
+  height: 35px;
+  border-bottom: 1px solid #ddd;
+  background-image: linear-gradient(to bottom, #f3f5f3, #eef0ee); }
+.dispModalDay .controls .button {
+  display: inline-block;
+  margin: 5px 4px 0;
+  border: 1px solid #cdc;
+  padding: 2px 6px;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  background-image: linear-gradient(to bottom, #eef0ee, #fff, #dcdedc);
+  box-shadow: 0 0 5px #eee;
+  color: #9a9;
+  white-space: nowrap; }
+.dispModalDay .controls table.weather {
+  float: right;
+  /*table-layout: fixed;*/
+  margin-top: -2px;
+  margin-bottom: -6px;
+  margin-right: 5px;
+  font-size: 12px;
+  /*color: #bbb;*/ }
+.dispModalDay .controls table.weather td {
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  padding: 0 2px;
+  margin: 0; }
+.dispModalDay .controls table.weather td.temp {
+  padding-top: 6px; }
+.dispModalDay .controls table.weather td.icon img {
+  width: auto;
+  height: 32px; }
+.dispModalDay .hoursWrapper {
+  overflow-y: auto;
+  height: calc(100% - 70px);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #fff; }
+.dispModalDay .hoursWrapper ul.hours {
+  display: block;
+  width: 100%;
+  list-style: none;
+  padding: 20px 10px 10px;
+  background-color: #fff; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour {
+  min-height: 18px;
+  margin: 2px auto 0;
+  padding-top: 3px;
+  border-top: 1px solid #e0e7f5;
+  color: #87868c; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.tasks {
+  display: block;
+  width: 100%;
+  list-style: none;
+  padding: 4px 0; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.tasks tr {
+  margin: 2px auto 2px;
+  border-top: 0;
+  font-size: 12px;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 2px auto 2px;
+  border-top: 0; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.tasks tr .time {
+  width: 62px;
+  text-align: right;
+  padding-right: 6px; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.tasks tr .completed {
+  font-size: 20px;
+  text-align: center;
+  width: 16px; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.tasks tr .completed span {
+  display: block;
+  margin-top: -8px; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.weather {
+  float: right;
+  margin-top: -16px;
+  margin-right: 3px;
+  padding: 0;
+  border-radius: 3px;
+  font-size: 9px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #ddd;
+  vertical-align: top; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.weather td {
+  vertical-align: top; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.weather td.temp {
+  width: 54px;
+  text-align: right;
+  padding-top: 2px; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour table.weather td.icon img {
+  width: auto;
+  height: 16px; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour .dispHour {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 24px;
+  font-size: 9px;
+  padding: 4px 6px 0 0;
+  text-align: right;
+  margin-top: -16px;
+  border: 1px solid #e0e7f5;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #ddd; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour.today {
+  border-top: 1px solid #adccfa;
+  color: #6c9bfa; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.today .dispHour {
+    border: 1px solid #adccfa;
+    /*color: #8ab3fa;*/ }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.today table.weather {
+    border: 1px solid #adccfa; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour.past {
+  border-top: 1px solid #d6d6d9;
+  color: #a2a2a2; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.past.empty {
+    display: none; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.past .dispHour {
+    border: 1px solid #d6d6d9; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.past table.weather {
+    border: 1px solid #d6d6d9; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour.present {
+  border-top: 1px solid #83acbf;
+  color: #275473; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.present .dispHour {
+    border: 1px solid #83acbf; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.present table.weather {
+    border: 1px solid #83acbf; }
+.dispModalDay .hoursWrapper ul.hours li.gridHour.future {
+  border-top: 1px solid #82bf8f;
+  color: #2e7758; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.future .dispHour {
+    border: 1px solid #82bf8f; }
+  .dispModalDay .hoursWrapper ul.hours li.gridHour.future table.weather {
+    border: 1px solid #82bf8f; }
+
+/*# sourceMappingURL=DayView.css.map */
